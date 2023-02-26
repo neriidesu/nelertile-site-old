@@ -4,8 +4,8 @@ title: New Month, New Website?
 author: Nelertile
 description: "Discussing changes in my new website."
 image:
-  url: "https://media.discordapp.net/attachments/749636915153731647/1079470458233163847/Nelertile_banner.png"
-  alt: "Nelertile's Banner"
+  url: "/Nelertile_Logo.svg"
+  alt: "Nelertile's Logo"
 pubDate: 2023-02-26
 tags: ["dev", "website", "monthly"]
 ---
@@ -16,8 +16,8 @@ Hello! This is my first monthly post, on my new blog!
 This month I have:
 
 1. Practiced a lot of trumpet!
-1. Gotten back in to Genshin Impact
-1. Redone my website in [Astro](https://astro.build/)
+2. Gotten back in to Genshin Impact
+3. Redone my website in [Astro](https://astro.build/)
 
 Let's talk more about this new website.
 

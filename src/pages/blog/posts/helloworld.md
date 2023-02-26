@@ -4,8 +4,8 @@ title: Hello, World!
 author: Nelertile
 description: "Initial Post"
 image:
-  url: "https://media.discordapp.net/attachments/749636915153731647/1079470458233163847/Nelertile_banner.png"
-  alt: "Nelertile's Banner"
+  url: "/Nelertile_Logo.svg"
+  alt: "Nelertile's Logo"
 pubDate: 2023-02-26
 tags: ["dev", "website"]
 ---

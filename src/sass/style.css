@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:ital,wght@0,500;1,500&family=Outfit:wght@500;700;900&display=swap");
 /*Variables*/    
 /*Colorscheme*/
 /*Spacers*/
@@ -82,7 +82,6 @@
 
 /* General Styling */
 * {
-  font-family: "Outfit", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -93,6 +92,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+a, h1, h2, h3, p, li, ul {
+  font-family: "Outfit", sans-serif;
+}
+
 a {
   font-weight: 500;
   color: #d2dae2;
@@ -101,11 +104,16 @@ a {
 }
 a:hover {
   color: #0be881;
-  filter: drop-shadow(0 0 1em rgba(11, 232, 129, 0.6666666667));
+  filter: drop-shadow(0 0 1em rgba(210, 218, 226, 0.6666666667));
 }
 a:hover.vanilla:hover {
   color: #0be881;
   filter: drop-shadow(0 0 1em rgba(11, 232, 129, 0.6666666667));
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 body {
@@ -121,6 +129,25 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+pre {
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 0;
+}
+pre code {
+  font-family: "Fira Code", monospace;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+}
+
+.note {
+  font-style: italic;
+  color: #808e9b;
+  margin: 0;
+  margin-left: 10px;
 }
 
 #app {
@@ -147,6 +174,41 @@ h1 {
 .social-icon.vanilla:hover {
   font-size: 8em;
   filter: drop-shadow(0 0 2em rgba(11, 232, 129, 0.6666666667));
+}
+
+.blog-content {
+  padding: 1em 0 1em 0;
+  text-align: left;
+}
+.blog-content a, .blog-content h1, .blog-content h2, .blog-content h3, .blog-content p, .blog-content li, .blog-content ul {
+  font-family: "Open Sans", sans-serif;
+}
+.blog-content a {
+  color: #05c46b;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.blog-content a:hover {
+  color: #0be881;
+  filter: drop-shadow(0 0 1em rgba(11, 232, 129, 0.6666666667));
+}
+.blog-content a:hover.vanilla:hover {
+  color: #0be881;
+  filter: drop-shadow(0 0 1em rgba(11, 232, 129, 0.6666666667));
+}
+
+.blog-title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: default;
+  margin: 1em;
+}
+.blog-title p {
+  color: #808e9b;
+}
+.blog-title h1, .blog-title p {
+  margin: 5px;
 }
 
 .logo {

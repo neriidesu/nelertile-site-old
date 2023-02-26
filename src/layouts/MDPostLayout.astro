@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout>
+  <div class="blog-title">
+    <h1>{frontmatter.title}</h1>
+    <p>{frontmatter.pubDate.slice(0, 10)}</p>
+    <p><em>{frontmatter.description}</em></p>
+    <p>Written by: {frontmatter.author}</p>
+    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  </div>
+  <div class="description">
+    <div class="blog-content">
+      <slot />
+    </div>
+    <div class="title">
+      <a href="/blog" class="glow">
+        <h1>Back</h1>
+      </a>
+    </div>
+  </div>
+</Layout>

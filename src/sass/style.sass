@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;900&display=swap')
+
+/*Variables*/    
+/*Colorscheme*/
+$accent-light: #0be881
+$accent-lightaa: #0be881aa
+$accent-dark: #05c46b
+$accent-darkaa: #05c46baa
+$dark: #1e272e
+$darkaa: #1e272eaa
+$grey: #485460
+$greyaa: #485460aa
+$lightgrey: #808e9b
+$lightgreyaa: #808e9baa
+$light: #d2dae2
+$lightaa: #d2dae2aa
+
+/*Spacers*/
+$smallSpace: 5px
+/*Variables*/    
+
+/* Horizontal Scrolling (Works Page) */
+.works-scroller
+    height: 342px
+    display: grid
+    grid-template-rows: min-content
+    gap: $smallSpace
+    grid-auto-flow: column
+    grid-auto-columns: 32%
+    overflow-x: auto
+    overscroll-behavior-inline: contain
+    padding: $smallSpace
+
+    /* Show scrollbar */
+    -ms-overflow-style: auto
+    scrollbar-width: auto
+    ::-webkit-scrollbar
+        display: auto
+
+.snaps-inline
+    scroll-snap-type: inline mandatory
+    scroll-padding-inline: $smallSpace
+.snaps-inline > *
+    scroll-snap-align: start
+.works-element
+    height: 295px
+    user-select: none
+    cursor: pointer
+    padding: $smallSpace
+    margin: $smallSpace
+    background-color: $grey
+    border-radius: 10px
+    transition: 0.3s
+    img
+        inline-size: 95%
+        aspect-ratio: 16 / 9
+        object-fit: cover
+        border-radius: 10px
+        transition: 0.3s
+    h3
+        font-size: 1em
+        transition: 0.3s
+
+    &:hover
+        color: $accent-light
+        filter: drop-shadow(0 0 5px $greyaa)
+        h3
+            filter: drop-shadow(0 0 1em $accent-lightaa)
+            font-size: 1.5em
+            font-weight: 700
+        img
+            inline-size: 100%
+        &.vanilla:hover
+            color: $accent-light
+            filter: drop-shadow(0 0 5px $greyaa)
+            h3
+                filter: drop-shadow(0 0 1em $accent-lightaa)
+                font-size: 1.5em
+                font-weight: 700
+            img
+                inline-size: 100%
+/* General Styling */
+*
+    font-family: 'Outfit', sans-serif
+    font-size: 16px
+    line-height: 24px
+    font-weight: 400
+
+    font-synthesis: none
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    -webkit-text-size-adjust: 100%
+a
+    font-weight: 500
+    color: $light
+    text-decoration: inherit
+
+    transition: 0.3s
+    &:hover
+        color: $accent-light
+        filter: drop-shadow(0 0 1em $accent-lightaa)
+        &.vanilla:hover
+            color: $accent-light
+            filter: drop-shadow(0 0 1em $accent-lightaa)
+
+body
+    margin: 0
+    display: flex
+    place-items: center
+    min-width: 320px
+    min-height: 100vh
+    background-color: $dark
+    color: $light
+
+h1
+    font-size: 3.2em
+    line-height: 1.1
+
+#app
+    max-width: 1280px
+    margin: 0 auto
+    padding: 2rem
+    text-align: center
+.navlink
+    padding: 10px
+.social-icon
+    margin: 20px
+    color: $accent-light
+    transition: 0.3s
+    width: 6em
+    &:hover
+        width: 8em
+        filter: drop-shadow(0 0 2em $accent-lightaa)
+
+    &.vanilla:hover
+        font-size: 8em
+        filter: drop-shadow(0 0 2em $accent-lightaa)
+
+.logo
+    height: 8em
+    padding: 1.5em
+    will-change: filter
+    transition: 0.3s
+
+    &:hover
+        height: 10em
+        filter: drop-shadow(0 0 2em $accent-lightaa)
+
+    &.vanilla:hover
+        height: 10em
+        filter: drop-shadow(0 0 2em $accent-lightaa)
+
+.title
+    user-select: none
+    cursor: default
+    margin: 1em
+    h1
+        margin: 0
+.description
+    user-select: none
+    cursor: default
+    h3
+        margin: 2px
+.grow-title
+    transition: 0.3s
+    font-weight: 900
+    font-size: 5em
+    &:hover
+        font-size: 6em
+        &.vanilla:hover
+            font-size: 6em
+.grow
+    transition: 0.3s
+    font-size: 1em
+    &:hover
+        font-size: 2em
+        &.vanilla:hover
+            font-size: 2em
+.glow
+    transition: 0.3s
+    &:hover
+        color: $accent-light
+        filter: drop-shadow(0 0 1em $accent-lightaa)
+        &.vanilla:hover
+            color: $accent-light
+            filter: drop-shadow(0 0 1em $accent-lightaa)

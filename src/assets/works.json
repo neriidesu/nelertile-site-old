@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Minecraft Stack Calculator",
+        "img": "mcstackcalc.png",
+        "href": "https://mcstackcalc.netlify.app/"
+    },{
+        "title": "This Website!",
+        "img": "website.png",
+        "href": "https://github.com/Nelertile/nelertile.github.io"
+    },{
+        "title": "Sine - A roller coaster with 3 inversions",
+        "img": "sine.png",
+        "href": "https://youtu.be/NKF9Uzsh1aY"
+    },{
+        "title": "First Coaster - My first coaster in NL2",
+        "img": "fcoaster.png",
+        "href": "https://youtu.be/jryUgxoLAzs"
+    }
+]

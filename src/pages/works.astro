@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Workscard from "../components/Workscard.astro";
+import Works from "../assets/works.json";
+---
+
+<Layout>
+  <main>
+    <div class="title">
+      <h1 id="glow">My Works</h1>
+    </div>
+    <div class="works-scroller snaps-inline">
+      {
+        Works.map((i) => (
+          <Workscard title={i.title} href={i.href} img={i.img} />
+        ))
+      }
+    </div>
+    <div class="title">
+      <a href="/" class="glow">
+        <h1>Back</h1>
+      </a>
+    </div>
+  </main>
+</Layout>

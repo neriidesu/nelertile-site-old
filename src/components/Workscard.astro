@@ -1,0 +1,18 @@
+---
+export interface Props {
+  title: string;
+  img: string;
+  href: string;
+}
+
+const { href, title, img } = Astro.props;
+
+const imgPath = `/works/img/${img}`;
+---
+
+<div class="works-element">
+  <a href={href}>
+    <img src={imgPath} alt="Project" />
+    <h3>{title}</h3>
+  </a>
+</div>

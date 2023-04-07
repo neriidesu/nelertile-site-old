@@ -11,8 +11,7 @@ pubDate: 2023-02-26
 tags: ["dev", "website"]
 ---
 
-Hello! This is my first monthly post, on my new blog!
-<br>From here on out, I'll be making a post at the end of every month.
+Hello! This is my first post, on my new blog!
 
 This month I have:
 

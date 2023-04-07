@@ -6,6 +6,7 @@
 /* Horizontal Scrolling (Works Page) */
 .works-scroller {
   height: 342px;
+  width: 100%;
   display: grid;
   grid-template-rows: min-content;
   gap: 5px;
@@ -17,6 +18,7 @@
   /* Show scrollbar */
   -ms-overflow-style: auto;
   scrollbar-width: auto;
+  scrollbar-color: #485460 #1e272e;
 }
 .works-scroller ::-webkit-scrollbar {
   display: auto;
@@ -39,15 +41,6 @@
   cursor: pointer;
   padding: 5px;
   margin: 5px;
-  background-color: #485460;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-.works-element img {
-  inline-size: 95%;
-  aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 10px;
   transition: 0.3s;
 }
@@ -55,29 +48,10 @@
   font-size: 1em;
   transition: 0.3s;
 }
-.works-element:hover {
-  color: #0be881;
-  filter: drop-shadow(0 0 5px rgba(72, 84, 96, 0.6666666667));
-}
 .works-element:hover h3 {
-  filter: drop-shadow(0 0 1em rgba(11, 232, 129, 0.6666666667));
+  filter: drop-shadow(0 0 0.5em rgba(11, 232, 129, 0.6666666667));
   font-size: 1.5em;
   font-weight: 700;
-}
-.works-element:hover img {
-  inline-size: 100%;
-}
-.works-element:hover.vanilla:hover {
-  color: #0be881;
-  filter: drop-shadow(0 0 5px rgba(72, 84, 96, 0.6666666667));
-}
-.works-element:hover.vanilla:hover h3 {
-  filter: drop-shadow(0 0 1em rgba(11, 232, 129, 0.6666666667));
-  font-size: 1.5em;
-  font-weight: 700;
-}
-.works-element:hover.vanilla:hover img {
-  inline-size: 100%;
 }
 
 /* General Styling */

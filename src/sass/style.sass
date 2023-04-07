@@ -22,6 +22,7 @@ $smallSpace: 5px
 /* Horizontal Scrolling (Works Page) */
 .works-scroller
     height: 342px
+    width: 100%
     display: grid
     grid-template-rows: min-content
     gap: $smallSpace
@@ -34,6 +35,7 @@ $smallSpace: 5px
     /* Show scrollbar */
     -ms-overflow-style: auto
     scrollbar-width: auto
+    scrollbar-color: $grey $dark
     ::-webkit-scrollbar
         display: auto
 
@@ -48,37 +50,18 @@ $smallSpace: 5px
     cursor: pointer
     padding: $smallSpace
     margin: $smallSpace
-    background-color: $grey
     border-radius: 10px
     transition: 0.3s
-    img
-        inline-size: 95%
-        aspect-ratio: 16 / 9
-        object-fit: cover
-        border-radius: 10px
-        transition: 0.3s
+
     h3
         font-size: 1em
         transition: 0.3s
-
     &:hover
-        color: $accent-light
-        filter: drop-shadow(0 0 5px $greyaa)
         h3
-            filter: drop-shadow(0 0 1em $accent-lightaa)
+            filter: drop-shadow(0 0 .5em $accent-lightaa)
             font-size: 1.5em
             font-weight: 700
-        img
-            inline-size: 100%
-        &.vanilla:hover
-            color: $accent-light
-            filter: drop-shadow(0 0 5px $greyaa)
-            h3
-                filter: drop-shadow(0 0 1em $accent-lightaa)
-                font-size: 1.5em
-                font-weight: 700
-            img
-                inline-size: 100%
+
 /* General Styling */
 *
     font-size: 16px

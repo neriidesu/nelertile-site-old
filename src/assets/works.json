@@ -1,19 +1,19 @@
 [
     {
         "title": "Minecraft Stack Calculator",
-        "img": "mcstackcalc.png",
+        "img": "url('https://cdn.discordapp.com/attachments/1093812239087173673/1093812331064066068/mcstackcalc.png')",
         "href": "https://mcstackcalc.netlify.app/"
     },{
         "title": "This Website!",
-        "img": "website.png",
+        "img": "url('https://cdn.discordapp.com/attachments/1093812239087173673/1093812352853475398/website.png')",
         "href": "https://github.com/Nelertile/nelertile.github.io"
     },{
         "title": "Sine - A roller coaster with 3 inversions",
-        "img": "sine.png",
+        "img": "url('https://cdn.discordapp.com/attachments/1093812239087173673/1093812344792035428/sine.png')",
         "href": "https://youtu.be/NKF9Uzsh1aY"
     },{
         "title": "First Coaster - My first coaster in NL2",
-        "img": "fcoaster.png",
+        "img": "url('https://cdn.discordapp.com/attachments/1093812239087173673/1093812317214490714/fcoaster.png')",
         "href": "https://youtu.be/jryUgxoLAzs"
     }
 ]

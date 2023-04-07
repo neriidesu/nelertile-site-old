@@ -5,14 +5,25 @@ export interface Props {
   href: string;
 }
 
-const { href, title, img } = Astro.props;
-
-const imgPath = `/works/img/${img}`;
+const { title, img = "hsl(0, 0%, 41%)", href } = Astro.props;
 ---
 
 <div class="works-element">
   <a href={href}>
-    <img src={imgPath} alt="Project" />
     <h3>{title}</h3>
   </a>
 </div>
+
+<style define:vars={{ img }}>
+  .works-element {
+    background: var(--img);
+    background-position: center;
+    background-size: cover;
+  }
+
+  h3 {
+    background-color: #485460e8;
+    border-radius: 25px;
+    padding: 5px;
+  }
+</style>

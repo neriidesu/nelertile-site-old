@@ -3,11 +3,12 @@ layout: ../../../layouts/MDPostLayout.astro
 title: New Month, New Website?
 author: Nelertile
 description: "Discussing changes in my new website."
+thumbnail: url('https://cdn.discordapp.com/attachments/1093807391595823104/1093807785503891518/image.png')
 image:
   url: "/Nelertile_Logo.svg"
   alt: "Nelertile's Logo"
 pubDate: 2023-02-26
-tags: ["dev", "website", "monthly"]
+tags: ["dev", "website"]
 ---
 
 Hello! This is my first monthly post, on my new blog!

@@ -1,0 +1,97 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import BlogThumbnail from "../../components/BlogThumbnail.astro";
+const allPosts = await Astro.glob("./posts/*.md");
+allPosts.reverse();
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+---
+
+<Layout>
+  <main>
+    <div class="title">
+      <h1 id="glow">Blog</h1>
+    </div>
+    <div class="description">
+      <h3>
+        This is my blog, Here I will post about all kinds of stuff regarding
+        myself and what projects I'm working on.
+      </h3>
+      <br />
+      <h3 class="tagsheader" style="padding-bottom:0">available tags</h3>
+      <div class="tags">
+        {
+          tags.map((tag) => (
+            <a href={`/blog/${tag}`}>
+              <div class="tag">{tag}</div>
+            </a>
+          ))
+        }
+      </div>
+
+      <div>
+        {
+          allPosts.map((post) => (
+            <BlogThumbnail
+              title={post.frontmatter.title}
+              description={post.frontmatter.description}
+              url={post.url}
+              thumbnail={post.frontmatter.thumbnail}
+            />
+          ))
+        }
+      </div>
+
+      <div class="title">
+        <a href="/" class="glow">
+          <h1>Back</h1>
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    width: calc(100% - 2rem);
+    margin-bottom: 1rem;
+  }
+
+  .tag {
+    border-radius: 10px;
+    border: solid 2px #ffffff70;
+    padding: 0.5em 1em;
+    font-size: 0.9rem;
+    background-color: #ffffff23;
+    cursor: pointer;
+  }
+
+  .tags > a > div {
+    margin: 0.2rem;
+    transition: all 0.2s ease;
+  }
+
+  .tags:has(div:hover) > a > div {
+    filter: blur(2px);
+  }
+
+  .tags:has(div:hover) > a:hover > div {
+    filter: blur(0);
+    transform: scale(1.05);
+    z-index: 1;
+  }
+
+  a {
+    color: whitesmoke !important;
+    background: none !important;
+  }
+
+  .tagsheader {
+    background-color: #ffffff0c;
+    border-radius: 25px;
+  }
+</style>
